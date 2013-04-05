@@ -1,0 +1,17 @@
+#!/bin/sh
+echo "Creating $1"
+express --css stylus $1
+cd $1
+touch README.md
+npm install
+touch run_locally.sh
+chmod 777 run_locally.sh
+echo "web: node app.js" > Procfile
+git init
+git add .
+git commit -a -m "First commit"
+heroku create $1
+git push heroku master
+heroku ps:scale web=1
+heroku open
+echo "Done"
