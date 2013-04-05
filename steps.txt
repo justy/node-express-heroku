@@ -1,0 +1,11 @@
+1. Create a template app            (I'll use Express)
+2. Add a README.md
+3. Install dependencies
+4. Create script to run locally
+5. Create Procfile for Heroku
+6. Make a new git repo
+7. Add all files
+8. Commit the files
+9. Push to Heroku
+10. Add a web dyno
+11. Open the app
