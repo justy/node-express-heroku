@@ -2,7 +2,7 @@
 echo "Creating $1"
 express --css stylus $1
 cd $1
-touch README.md
+echo "#$1" > README.md
 npm install
 touch run_locally.sh
 chmod 777 run_locally.sh
